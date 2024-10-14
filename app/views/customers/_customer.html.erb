@@ -1,7 +1,7 @@
-<div class="customer-card">
-  <%= image_tag customer.image if customer.image.attached? %>
-  <h2><%= customer.full_name %></h2>
-  <p>Phone: <%= customer.phone_number %></p>
-  <p>Email: <%= customer.email_address.presence || "Not provided" %></p>
-  <p>Notes: <%= customer.notes %></p>
+<div class="customer">
+  <p>
+    <strong>Full Name:</strong> <%= customer.full_name %><br>
+    <strong>Phone Number:</strong> <%= customer.phone_number %><br>
+    <strong>Email Address:</strong> <%= customer.email_address || "No Email" %>
+  </p>
 </div>
